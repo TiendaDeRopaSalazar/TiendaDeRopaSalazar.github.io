@@ -1,0 +1,245 @@
+/* -------------------- VARIABLES GENERALES -------------------- */
+:root {
+  --primario: #222;
+  --secundario: #fff;
+  --acento: #e91e63;
+  --fuente-principal: 'Poppins', sans-serif;
+  --fuente-logo: 'Lobster', cursive;
+}
+
+/* -------------------- RESET -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--secundario);
+  color: var(--primario);
+  padding: 20px;
+
+  /* Fondo con imagen */
+  background-image: url('fondo para una tienda de ropa con colores mas o menos llamativos para hombres y mujeres.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* -------------------- HEADER / TOP BAR -------------------- */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primario);
+  color: var(--secundario);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.titulo-barra {
+  font-family: var(--fuente-logo);
+  font-size: 30px;
+}
+
+.carrito-btn,
+.pedido-btn {
+  background-color: var(--acento);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.carrito-btn:hover,
+.pedido-btn:hover {
+  background-color: #c2185b;
+}
+
+/* -------------------- TÍTULO PRINCIPAL -------------------- */
+.Titulo-Principal {
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 35px;
+  font-family: var(--fuente-logo);
+}
+
+/* -------------------- CARRITO -------------------- */
+.carrito-contenedor {
+  background-color: #f1f1f1;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+#carrito-items {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+/* -------------------- SLIDER / CATEGORÍAS -------------------- */
+.accordion {
+  background-color: var(--primario);
+  color: var(--secundario);
+  cursor: pointer;
+  padding: 12px 20px;
+  margin: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.panel {
+  display: none;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.slider img {
+  max-width: 150px;
+  border-radius: 10px;
+}
+
+.contenido p {
+  margin: 10px 0;
+}
+
+.slider button {
+  background: var(--acento);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* -------------------- FORMULARIO DE PEDIDO -------------------- */
+.titulo-formulario {
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif; /* Cambiamos a una fuente más fuerte y moderna */
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* sombra para destacarlo */
+  animation: brillaTexto 3s infinite alternate; /* animación suave */
+}
+
+@keyframes brillaTexto {
+  0%   { text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); color: #ff2525b4; }
+  50%  { text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.9); color: #ffd000d5; }
+  100% { text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); color: #24c43f8e; }
+}
+
+
+form {
+  max-width: 400px;
+  margin: auto;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button[type="submit"] {
+  background-color: var(--acento);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button[type="submit"]:hover {
+  background-color: #dd1212;
+}
+
+/* -------------------- BOTÓN VOLVER -------------------- */
+.boton-volver {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: var(--primario);
+  background-color: #d6246cef;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.boton-volver:hover {
+  background-color: #dd1212;
+}
+
+/* -------------------- FOOTER -------------------- */
+.footer {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #333;
+  text-align: center;
+  color: white;
+}
+
+.footer p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.redes-sociales {
+  font-size: 2rem;
+}
+
+.redes-sociales a {
+  margin: 0 15px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  transform: scale(1.2);
+}
+
+.redes-sociales a[href*="instagram"] {
+  color: #db1054;
+}
+
+.redes-sociales a[href*="whatsapp"] {
+  color: #08f15e;
+}
+
+.redes-sociales a[href*="facebook"] {
+  color: #173e92;
+}
+

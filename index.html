@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda de Ropa</title>
+  <link rel="stylesheet" href="Styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Barra superior -->
+<header class="top-bar">
+  <button class="carrito-btn" id="ver-carrito">🛒 Ver Carrito (<span id="carrito-cantidad">0</span>)</button>
+  <h1 class="titulo-barra">Tienda de Ropa Salazar</h1>
+  <button class="pedido-btn" onclick="window.location.href='Realizar pedidos.html'">Realizar Pedido</button>
+</header>
+
+<!-- Título -->
+<h1 class="Titulo-Principal">Tienda de Ropa Salazar</h1>
+
+<!-- Contenedor del carrito -->
+<div id="carrito" class="carrito-contenedor">
+  <h2>Carrito</h2>
+  <ul id="carrito-items"></ul>
+  <p id="carrito-total">Total: $0</p>
+</div>
+
+<!-- BUZOS -->
+<button class="accordion">Buzos</button>
+<div class="panel">
+  <div class="slider">
+    <button class="arrow left-arrow" onclick="prevSlide('buzos')">◀</button>
+    <div class="contenido">
+      <img id="img-buzos" src="" alt="Buzo"/>
+      <p id="info-buzos"></p>
+      <button onclick="agregarAlCarrito('buzos')">Agregar al carrito</button>
+    </div>
+    <button class="arrow right-arrow" onclick="nextSlide('buzos')">▶</button>
+  </div>
+</div>
+
+<!-- CAMPERAS -->
+<button class="accordion">Camperas</button>
+<div class="panel">
+  <div class="slider">
+    <button class="arrow left-arrow" onclick="prevSlide('camperas')">◀</button>
+    <div class="contenido">
+      <img id="img-camperas" src="" alt="Campera"/>
+      <p id="info-camperas"></p>
+      <button onclick="agregarAlCarrito('camperas')">Agregar al carrito</button>
+    </div>
+    <button class="arrow right-arrow" onclick="nextSlide('camperas')">▶</button>
+  </div>
+</div>
+
+<!-- REMERAS -->
+<button class="accordion">Remeras</button>
+<div class="panel">
+  <div class="slider">
+    <button class="arrow left-arrow" onclick="prevSlide('remeras')">◀</button>
+    <div class="contenido">
+      <img id="img-remeras" src="" alt="Remera"/>
+      <p id="info-remeras"></p>
+      <button onclick="agregarAlCarrito('remeras')">Agregar al carrito</button>
+    </div>
+    <button class="arrow right-arrow" onclick="nextSlide('remeras')">▶</button>
+  </div>
+</div>
+
+<!-- PANTALONES -->
+<button class="accordion">Pantalones</button>
+<div class="panel">
+  <div class="slider">
+    <button class="arrow left-arrow" onclick="prevSlide('pantalones')">◀</button>
+    <div class="contenido">
+      <img id="img-pantalones" src="" alt="Pantalón"/>
+      <p id="info-pantalones"></p>
+      <button onclick="agregarAlCarrito('pantalones')">Agregar al carrito</button>
+    </div>
+    <button class="arrow right-arrow" onclick="nextSlide('pantalones')">▶</button>
+  </div>
+</div>
+
+<!-- SCRIPT FINAL -->
+<script src="Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Finalizar Pedido</title>
+  <link rel="stylesheet" href="Styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <a href="index.html" class="boton-volver">← Volver a Inicio</a>
+  <h2 class="titulo-formulario">Completa tu pedido</h2>
+
+  <form action="https://formsubmit.co/tomasabelsalazar@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="true">
+
+    <label>Nombre y Apellido:</label>
+    <input type="text" name="nombre_apellido" required>
+
+    <label>Teléfono:</label>
+    <input type="tel" name="telefono" required>
+
+    <label>Forma de Pago:</label>
+    <select name="forma_pago" required>
+      <option>Transferencia</option>
+      <option>Efectivo</option>
+      <option>MercadoPago</option>
+    </select>
+
+    <label>Zona de Entrega:</label>
+    <input type="text" name="zona_entrega" placeholder="Ej. Quilmes, Bernal..." required>
+
+    <button type="submit">Confirmar Pedido</button>
+  </form>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Seguinos en nuestras redes:</p>
+    <div class="redes-sociales">
+      <a href="https://www.instagram.com/tomas_salazar2/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/+5401135609033?text=Hola%20quiero%20más%20información" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.facebook.com/tomasabel.salazar" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="Script.js"></script>
+</body>
+</html>
